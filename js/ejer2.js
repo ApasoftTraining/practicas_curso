@@ -5,6 +5,7 @@
 comentario múltiple
 
 */
+const COLOR_ROJO="#FF0000";
 
 console.log('He pasado por este fichero');
 
