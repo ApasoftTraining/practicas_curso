@@ -12,5 +12,20 @@
         Crear una funcion llamada iniciales que pinte las iniciales
         Albert Perez Rdoriguez -- A.P.R
     -->
+    <h2> Funcion iniciales</h2>
+
+    <script>
+        let nombre=prompt('nombre');
+        let ape1=prompt('apellido1');
+        let ape2=prompt('apellido2');
+        console.log(iniciales(nombre,ape1,ape2));
+
+        function iniciales(n,a1,a2) {
+
+            return `${n.charAt(0)}.${a1.charAt(0)}.${a2.charAt(0)}.`.toUpperCase();
+            
+        }
+
+    </script>
 </body>
 </html>
