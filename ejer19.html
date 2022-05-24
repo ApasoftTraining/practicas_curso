@@ -14,7 +14,10 @@
         //Maps
         //Pedir uyn texto por teclado y convertirlo en array
         //Al array conertimo todo en mayusucula
-        
+        let texto=prompt('introduce texto');
+        let array=texto.split(' ');
+        array.forEach((elemento,indice)=>{array[indice]=elemento.toUpperCase()});
+        console.log(array);
 
     </script>
 </body>
