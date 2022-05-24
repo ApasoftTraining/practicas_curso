@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Buscar por TAGS</h2>
+    <div>
+        <p> parrafo1</p>
+        <p>parrafo2</p>
+        <h3> un h3</h3>
+    </div>
+    <div>
+        <p>parrafo3</p>
+        <h3> otro h3 </h3>
+    </div>
+    <script>
+        let parrafos=document.getElementsByTagName('p');
+        for (parrafo of parrafos)
+        {
+            //parrafo.innerHTML="hola";
+            console.log(parrafo);
+            parrafo.innerHTML='hola';
+        }
+        for(x in parrafos)
+        {
+            console.log(x);
+            parrafos[x].innerHTML='adios';
+        }
+    </script>
+</body>
+</html>
