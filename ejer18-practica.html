@@ -11,23 +11,34 @@
 <body>
     <h2> Arrays</h2>
     <script>
-       //Declara un array
-       let array3 = ["pepe", "Rosa", "Juan", 10, true, "Raul", 90];
+        //Declara un array
+        let array3 = ["pepe", "Rosa", "Juan", 10, true, "Raul", 90];
 
-       //Declarar un array vacio
+        //Declarar un array vacio
+        let array4 = [];
+        //let array5=new Array();
 
-
-       //Bucle para poner los elementos dekl primer array enel segundo, pero solo los String
-       //Usando forEach
-       
-       
-       array3.forEach( (item,indice)=> {
-           array3[indice]=String(item).toUpperCase();           
-       });
-       
-     
+        //Bucle para poner los elementos dekl primer array enel segundo, pero solo los String
+        //Usando forEach
 
 
+        array3.forEach((item) => {
+            if (typeof (item) == "string") {
+               array4.push(item);
+            }
+
+        });
+        console.log(array3);
+        console.log(array4);
+    
+          let a1=array3.filter((elemento)=>{ 
+          return  String(elemento).charAt(0)=='R'}) 
+          let a2=array3.find((elemento)=>{ 
+          return  String(elemento).charAt(0)=='R'}) 
+
+    console.log(a1);
+
+    console.log(a2);
     </script>
 </body>
 
