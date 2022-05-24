@@ -20,6 +20,18 @@
     <script>
         //Pedirpor teclado una frase
         // visualizar en forma de lista, un elemento por palabra
+        const texto=prompt('texto');
+
+        let lista=document.createElement('ul');
+
+        array1=texto.split(' ');
+
+        array1.forEach(elemento => {
+            let fila=document.createElement('li');
+            fila.innerHTML=elemento;
+            lista.append(fila);
+        });
+        document.body.append(lista);
 
     </script>
 </body>
