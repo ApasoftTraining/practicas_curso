@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2> Arrays</h2>
     <script>
-        let array1= new Array();
-        let array2=[];
-        let array3=["pepe","Rosa","Juan",10,true,"Raul",90];
-   for (const iterator of array3) {
-         console.log(iterator+"-->"+typeof(iterator))    ;
-   }
-        
-        
+        //Decir el tipo de dato de cada elemento del array//
+        //Pedir un textopor teclado y decir siestá en el array
+        let array1 = new Array();
+        let array2 = [];
+        let array3 = ["pepe", "Rosa", "Juan", 10, true, "Raul", 90];
+        for (const iterator of array3) {
+            console.log(iterator + "-->" + typeof (iterator));
+        }
+        let texto = prompt('Dato a buscar')
+        const posicion = array3.indexOf(texto);
+        if (posicion == -1) {
+            console.log('no encontrado');
+        }
+        else {
+            console.log('Encontrado en la posicion ' + posicion);
+        }
 
-        //Decir el tipo de dato de cada elemento del array
+
+
     </script>
 </body>
+
 </html>
