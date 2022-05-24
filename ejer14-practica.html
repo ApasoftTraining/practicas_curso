@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Pedir un color por teclado y cambiar el background de los párrafos
+        Mejorar la practica pidiendoeltipo de elemento a cambiar
+    -->
+    <h2> Buscar por TAGS</h2>
+    <div>
+        <p> parrafo1</p>
+        <p>parrafo2</p>
+        <h3> un h3</h3>
+    </div>
+    <div>
+        <p>parrafo3</p>
+        <h3> otro h3 </h3>
+    </div>
+    <script>
+        let color=prompt('Dime el color')
+        let tipo=prompt('Dime el tipo')
+        let parrafos=document.getElementsByTagName(tipo);
+
+        //Primera Opcion
+        for (parrafo of parrafos)
+        {                    
+            parrafo.style.backgroundColor=color;
+        }
+        /*Segunda opcion
+        for(p in parrafos)
+        {
+            parrafos[p].style.backgroundColor=color;
+        }
+        */
+        document.get
+    </script>
+</body>
+</html>
