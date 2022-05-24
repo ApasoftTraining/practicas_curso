@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body>
+    <h2 style="color:aquamarine; font-size:14px;"> Buscar por TAGS</h2>
+    <div id="div1">
+        <p> parrafo1</p>
+        <p class="prueba">parrafo2</p>
+        <h3 class="clase1"> un h3</h3>
+    </div>
+    <div>
+        <p class="clase1">parrafo3</p>
+        <h3 > otro h3 </h3>
+    </div>
+    <script>
+        //let parrafos=document.getElementsByTagName('p');
+        let parrafos=document.querySelectorAll('p, h3');
+        for (parrafo of parrafos)
+        {
+            //parrafo.innerHTML="hola";
+            console.log(parrafo);
+            parrafo.innerHTML='hola';
+        }
+        /*
+        for(x in parrafos)
+        {
+            console.log(x);
+            parrafos[x].innerHTML='adios';
+        }*/
+    </script>
+</body>
+</html>
