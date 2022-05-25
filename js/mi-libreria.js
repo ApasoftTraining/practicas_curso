@@ -50,7 +50,8 @@ function pintar(){
 let num_parrafo = 0;
 
         function add_parrafo() {
-            let p = document.createElement('p');
+            
+            let p = document.createElement('p');           
             p.innerHTML = "Soy el párrafo " + num_parrafo;
             p.className = "display-6 text-danger";
             num_parrafo++
