@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2> objetos</h2>
 
     <script>
-       let alumno={
-           nombre: "pepe",
-           apellidos: "Rodriguez",
-           edad: 60,
-           curso: "Tecnologia",
-           ver_nombre: function(){
-               return this.nombre+ " "+ this.apellidos;
-           },
-           mayus: function(){
-               return this.curso.toUpperCase();
-           }
-       }
+        let alumno = {
+            nombre: "pepe",
+            apellidos: "Rodriguez",
+            edad: 60,
+            curso: "Tecnologia",
+
+            ver_nombre: function () {
+                return this.nombre + " " + this.apellidos;
+            },
+
+            mayus: function () {
+                return this.curso.toUpperCase();
+            },
+            
+            f2() { return "adios" },
+
+            ejemplo: ()=>{
+                return "Esto es una funcion de flecha";
+            },
+            
+
+        }
+        
+        let cursos = {
+
+            id: 1,
+            nombre: 'Dario',
+            descripcion: 'Descripcion 1',
+            profesor: 'Alberto',
+            num_alumnos: 20,
+            ver_datos: function () {
+                return this.nombre + ' ' + this.descripcion;
+            },
+            ver_profesor: function () {
+                return this.profesor.toUpperCase();
+            }
+        }
+
+
 
     </script>
 </body>
+
 </html>
