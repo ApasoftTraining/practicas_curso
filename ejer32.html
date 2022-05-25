@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/mi-libreria.js"></script>
+</head>
+
+<body>
+    <!--     
+        Boton que al pulsarlo añada un parrafo con el texto "soy el parrafo X"
+    -->
+
+    <div id="div1" class="container border border-success">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="display-4 text-center">EJEMPLO DE EVENTO</h2>
+                <button class="btn btn-success" onclick="add_parrafo()">Añadir párrafo</button>           
+                <input id="caja" class="form-control"  type="text"  onkeyup="pintar_letras()">
+                <p id="p1">PARA PINTAR</p>
+            </div>
+            <div class="col-sm-6">
+                <div id="div2" class=" border border-danger"></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function pintar_letras()
+        {
+            let caja=document.getElementById("caja");
+            let texto=caja.value;
+            document.getElementById('p1').innerHTML=texto;
+        }
+    </script>
+    
+</body>
+
+</html>
