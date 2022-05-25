@@ -23,10 +23,13 @@
         <div class="row">
             <div class="col-md-6">
                 <h2 class="display-4 text-center">EJEMPLO DE EVENTO</h2>
-                <button class="btn btn-success" onclick="add_parrafo()">Añadir párrafo</button>           
+                <button class="btn btn-success" onclick="add_parrafo()">Añadir párrafo</button>    
+                <button class="btn btn-success" onclick="f1()" id="boton1">Prueba</button>        
                 <!-- <input id="caja" class="form-control"  type="text"  onkeyup="pintar_letras1(this.value)">  -->
                 <input id="caja" class="form-control"  type="text"  onkeyup="pintar_letras()">
                 <p id="p1">PARA PINTAR</p>
+                          
+
             </div>
             <div class="col-sm-6">
                 <div id="div2" class=" border border-danger"></div>
@@ -35,6 +38,32 @@
         </div>
     </div>
     <script>
+        function f1(){
+            console.log('Primera funcion');
+        }
+         
+        //Otro Evento del mismo objeto boton
+        boton1.onclick=function(){
+            console.log('segunda funcion');
+        }
+        //Otro Evento del mismo objeto boton
+        boton1.onclick=function(){
+            console.log('tercera funcion');
+        }
+
+        boton1.addEventListener('click',f2);
+        boton1.addEventListener('click',fglobal);
+
+        function f2()
+        {
+            console.log('cuarta funcion');
+        }
+        function fglobal()
+        {
+            console.log('esto es una funcion global lde la empresa')
+        }
+
+
         function pintar_letras()
         {
             debugger;
