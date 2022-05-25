@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/mi-libreria.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>MI PRIMER EJEMPLO DE BOOTSTRAP COLUMNS</h1>
+        <div class="row">
+            <div class="col-sm-3 border" style="background-color: violet">primer columna</div>
+            <div class="col-sm-3 border" style="background-color:tomato;">segunda columna</div>
+            <div class="col-sm-3" style="background-color:teal">tercera columna</div>
+            <div class="col-sm-3" style="background-color:turquoise">cuarta columna</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4" style="background-color: violet;">primer columna</div>
+            <div class="col-sm-8" style="background-color:tomato;">segunda columna</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" style="background-color: violet;">Navegacion
+                <div class="row">
+                    <div class="col-sm-4" style="background-color:turquoise">Subcolumna1 </div>
+                    <div class="col-sm-2" style="background-color:yellow">SB2 </div>
+                    <div class="col-sm-6" style="background-color:teal">SB3</div>
+                </div>
+            </div>
+            <div class="col-sm-6" style="background-color:tomato;">DATOS
+                <p>qual-width multi-line
+                    Create equal-width columns that span multiple lines by inserting a .w-100 where you want the columns
+                    to break to a new line. Make the breaks responsive by mixing .w-100 with some responsive display
+                    utilities.
+
+                    There was a Safari flexbox bug that prevented this from working without an explicit flex-basis or
+                    border. There are workarounds for older browser versions, but they shouldn’t be necessary if your
+                    target browsers don’t fall into the buggy versions.
+
+                    col</p>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
