@@ -33,11 +33,14 @@
     </ul>
 
     <script>
-        l1.addEventListener('click', mover);
 
-        function mover(evento) {
-            console.log(evento)
-            l2.append(evento.target);
+        //l1.addEventListener('click', (e)=> { mover (e.target) });
+        l1.addEventListener('click', mover );
+
+        function mover(elemento) {
+            
+            console.log(elemento.target)
+            l2.append(elemento.target);
         }
 
     </script>
