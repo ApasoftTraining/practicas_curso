@@ -41,3 +41,8 @@ const vocales1 = ((str) => {
 /*
 if (["a","e","i","o","u"].indexOf(i)!=-1)                   
 */
+
+
+function pintar(){
+    console.log('has pulsado un botón');
+}
