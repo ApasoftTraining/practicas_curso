@@ -46,3 +46,16 @@ if (["a","e","i","o","u"].indexOf(i)!=-1)
 function pintar(){
     console.log('has pulsado un botón');
 }
+
+let num_parrafo = 0;
+
+        function add_parrafo() {
+            let p = document.createElement('p');
+            p.innerHTML = "Soy el párrafo " + num_parrafo;
+            p.className = "display-6 text-danger";
+            num_parrafo++
+
+            let div = document.getElementById('div2');
+            div.append(p);
+        }
+

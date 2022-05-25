@@ -12,20 +12,26 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="./js/mi-libreria.js"></script>
-
 </head>
 
 <body>
-    <h1> Eventos</h1>
-    <!-- 
-        click
-        submit (formulario)
-        onload
+    <!--     
+        Boton que al pulsarlo añada un parrafo con el texto "soy el parrafo X"
     -->
-    <input type="button" value="Aceptar" onclick="console.log('hola')">
-    <input type="button" value="Otro" onclick="pintar()">
-    <p style="background-color:blueviolet ;" onclick="console.log('en el div')">DIV</p>
 
+    <div id="div1" class="container border border-success">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="display-4 text-center">EJEMPLO DE EVENTO</h2>
+                <button class="btn btn-success" onclick="add_parrafo()">Añadir párrafo</button>
+            </div>
+            <div class="col-sm-6">
+                <div id="div2" class=" border border-danger"></div>
+            </div>
+
+        </div>
+    </div>
+    
 </body>
 
 </html>
