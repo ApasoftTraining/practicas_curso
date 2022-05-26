@@ -36,10 +36,25 @@
             <td>Serie 5</td>
             <td>120</td>
         </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+
+        </tr>
 
 
     </table>
-
+    <button onclick="rellenar()">Rellenar Tabla</button>
     <script>
         function Coche(matricula, marca, modelo, cv) {
             this.matricula = matricula;
@@ -47,14 +62,64 @@
             this.modelo = modelo;
             this.cv = cv,
                 this.ver_datos = function () {
-                    return this.marca + " " + thids.modelo;
+                    return this.marca + " " + this.modelo;
                 }
         }
 
-        const coche1 = new Coche('sadsa', 'bmw', '3', '100');
-        const coche2 = new Coche('sadsasdfds', 'Mercedes', '500', '100');
-        const coche3 = new Coche('sadsfffa', 'Citroen', 'xc', '100');
-        const coche4 = new Coche('sadsssa', 'renault', 'clio', '100');
+        function rellenar() {
+            const p1 = new Coche('sadsa', 'bmw', '3', '100');
+            const p2 = new Coche('sadsasdfds', 'Mercedes', '500', '100');
+            const p3 = new Coche('sadsfffa', 'Citroen', 'xc', '100');
+            const p4 = new Coche('sadsssa', 'renault', 'clio', '100');
+
+            //Crear un Array y meter los 4 en el array
+            //Recorrer ese array y por cada iteracion crear un TR en la tabla
+            // y crear 4 TD con las propiedades del objeto
+            //Crear un array de personas
+            //Visualizamos en una tsabla de HTML 
+            //Crear un array con esas 3 personas
+            coches = [p1, p2, p3, p4];
+            //detectar la tabla
+            let tabla = document.getElementById("tabla");
+            //Bucle por cada persona
+            for (let coche of coches) {
+                //Creamos la fila
+                let fila = document.createElement('tr');
+                //Añadir la fila a la tabla
+                tabla.appendChild(fila);
+                //Creo un array para albergar las columnas
+                let columnas = new Array(4);
+
+                //Primera versión
+                //Creo un bucle para crear las <td> y añadiras al array columnas
+                /*
+                        for (let x = 0; x <= 3; x++) {
+                            columnas[x] = document.createElement('td');
+                        fila.appendChild(columnas[x]);
+                        }
+                //Añadir datos a cada columna
+                        columnas[0].innerHTML = coche.matricula;
+                        columnas[1].innerHTML = coche.marca;
+                        columnas[2].innerHTML = coche.modelo;
+                        columnas[3].innerHTML = coche.cv;*/
+
+                //Segunda versión 
+
+                for (let x in coche) {
+                    if (typeof (coche[x]) != 'function') {
+                        let columna = document.createElement('td');
+                        columna.innerHTML = coche[x];
+                        fila.append(columna);
+                    
+                    }
+                }
+
+
+
+
+            }
+            debugger;
+        }
 
 
 
