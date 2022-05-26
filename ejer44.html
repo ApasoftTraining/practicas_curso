@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Geolocalización</h2>
+    <p id="posicion"> </p>
+    <script>
+        navigator.geolocation.getCurrentPosition(mostrarPosicion,problemon);
+
+        function mostrarPosicion(posicion){
+            let p1=document.getElementById("posicion");
+            p1.innerHTML=posicion.coords.latitude+" "+posicion.coords.longitude;
+        }
+
+        function problemon(malo)
+        {
+            let p1=document.getElementById("posicion");
+            p1.innerHTML="no he onseguido saber donde estas"
+        }
+    
+    </script>
+</body>
+</html>
