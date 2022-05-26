@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form onsubmit="return cargar(e)" method="" id="formulario1"  action="">
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" />
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" />
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" />
+        <label for="edad">Edad</label>
+        <input type="text" name="edad" />
+        <input type="submit" value="pulsar" />
+    </form>
+    <script>
+        // Create an object:
+        var cliente =
+        {
+            dni: "1234C",
+            nombre: "Alberto",
+            apellidos: "Rodriguez García",
+            edad: 29,
+            verDni: function () {
+                return this.dni;
+            },
+            verNombre: function () {
+                return this.nombre + " " + this.apellidos;
+            }
+        }
+
+        function cargar(e) {
+            debugger;
+            e.preventDefault();
+            var fomu = document.forms.formulario1;
+            var formData = new FormData(fomu);
+            console.log(formData);
+            return true;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

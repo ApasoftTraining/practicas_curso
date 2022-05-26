@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Constructor de objetos</h2>
+    <table class="table  table-hover table-striped" id="tabla">
+        <tr class="table-warning">
+            <th>
+                Matricula
+            </th>
+            <th>
+                Marca
+            </th>
+            <th>
+                Modelo
+            </th>
+            <th>
+                CV
+            </th>
+        </tr>
+        <tr>
+            <td>m-1900</td>
+            <td>BMW</td>
+            <td>Serie 5</td>
+            <td>120</td>
+        </tr>
+
+
+    </table>
+
+    <script>
+        function Coche(matricula, marca, modelo, cv) {
+            this.matricula = matricula;
+            this.marca = marca;
+            this.modelo = modelo;
+            this.cv = cv,
+                this.ver_datos = function () {
+                    return this.marca + " " + thids.modelo;
+                }
+        }
+
+        const coche1 = new Coche('sadsa', 'bmw', '3', '100');
+        const coche2 = new Coche('sadsasdfds', 'Mercedes', '500', '100');
+        const coche3 = new Coche('sadsfffa', 'Citroen', 'xc', '100');
+        const coche4 = new Coche('sadsssa', 'renault', 'clio', '100');
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
