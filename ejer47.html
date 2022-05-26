@@ -8,10 +8,18 @@
 </head>
 <body>
     <h1>Almacenamiento</h1>
+    <p>Pon un valor</p>
+    <input type="text" id="caja">
+    <input type="text" id="caja1">
+    <button onclick="crearLocal()">Crear variable Local y de Sesion</button>
+    
     <script>
-        window.localStorage.setItem('nombre','alberto');
-        window.sessionStorage.setItem('nombre_sesion','alberto');
-        console.log(window.localStorage.getItem('nombre'));
+        function crearLocal(){
+        window.localStorage.setItem('nombre',document.getElementById('caja').value);
+        window.sessionStorage.setItem('nombre1',document.getElementById('caja1').value);
+        }
+        
+        
     </script>
 </body>
 </html>
