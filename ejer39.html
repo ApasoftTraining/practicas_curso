@@ -7,6 +7,49 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="width: 200px; height: 200px; background-color:aqua ; "></div>
+    <div id="contenidos" style="width: 200px; height: 200px; background-color:red ; ">ROJO</div>
+    <script>
+
+        //addEventListener
+        var div1 = document.getElementById("contenidos");
+
+        //Primer version
+        //div1.addEventListener("mouseover", verde);
+       
+        /* Segunda version
+        div1.addEventListener("mouseover", ()=> {div1.style.backgroundColor = 'green';
+                                                div1.innerHTML="VERDE"    ;    
+        });
+        */
+
+        //tercera version
+        div1.addEventListener("mouseover", (evento)=> verde(evento,"VERDE"));
+
+        div1.addEventListener("mouseout", rojo);
+
+        div1.addEventListener("dblclick", (evento)=> amarillo(evento,"AMARILLO"));
+
+
+        function verde(e,c) {
+            div1.style.backgroundColor = 'green';
+            div1.innerHTML=c;
+            console.log(e);
+        }
+
+        function amarillo(e,c) {
+            div1.style.backgroundColor = 'yellow';
+            div1.innerHTML=c;
+            console.log(e);
+        }
+
+
+        function rojo(e, x) {
+            div1.style.backgroundColor = 'red';
+            div1.innerHTML="ROJO"
+        }
+
+
+
+    </script>
 </body>
 </html>

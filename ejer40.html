@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>GETTER y SETTER en los objetos</h2>
+    <script>
+        // Creamos 4 cajas de texto y un boton
+        //Rellenamos las cajas y aldar al boton actualizamos el cliente y lo pintamos en un div
+        //Utilizamos get y set
+        let cliente = {
+            dni: "",
+            nombre: "",
+            apellidos: "",
+            edad: 0,
+            nombre_completo: function(){
+                return this.nombre+" "+this.apellidos;
+            },
+
+            get getDni() {
+                return this.dni;
+            },
+            get getNombre(){
+                return this.nombre.toUpperCase();
+            },
+            set setDni(d){
+                this.dni=d;
+            },
+            set setNombre(nombre){
+                this.nombre=nombre;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
