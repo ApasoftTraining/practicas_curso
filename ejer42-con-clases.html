@@ -56,14 +56,16 @@
     </table>
     <button onclick="rellenar()">Rellenar Tabla</button>
     <script>
-        function Coche(matricula, marca, modelo, cv) {
-            this.matricula = matricula;
-            this.marca = marca;
-            this.modelo = modelo;
-            this.cv = cv,
-                this.ver_datos = function () {
-                    return this.marca + " " + this.modelo;
-                }
+       class Coche {
+            constructor(matricula, marca, modelo, cv) {
+                this.matricula = matricula;
+                this.marca = marca;
+                this.modelo = modelo;
+                this.cv = cv
+            }
+            ver_datos = function () {
+                return this.marca + " " + this.modelo;
+            }
         }
 
         function rellenar() {

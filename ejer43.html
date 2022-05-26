@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 class="'pepito"> CLASES</h2>
+
+
+    <script>
+        //Crear una clase con constructor y metodos
+        class Coche {
+            constructor(matricula, marca, modelo, cv) {
+                this.matricula = matricula;
+                this.marca = marca;
+                this.modelo = modelo;
+                this.cv = cv
+            }
+            ver_datos = function () {
+                return this.marca + " " + this.modelo;
+            }
+        }
+        
+
+        const p1 = new Coche('sadsa', 'bmw', '3', '100');
+        const p2 = new Coche('sadsasdfds', 'Mercedes', '500', '100');
+        const p3 = new Coche('sadsfffa', 'Citroen', 'xc', '100');
+        const p4 = new Coche('sadsssa', 'renault', 'clio', '100');
+
+        //Creo una clase con constructor vacio
+        class Coche1 {
+            constructor() {
+                this.prueba = 0;
+                this.prueba1="";
+            }
+        }
+        const c1=new Coche1();
+
+
+
+        class Electrico extends Coche {
+            constructor(bateria) {
+                super('sadsasdfds', 'Mercedes', '500', '100');
+                this.bateria = bateria;
+            }
+        }
+
+        const el1 = new Electrico('100hz');
+
+
+    </script>
+</body>
+
+</html>
