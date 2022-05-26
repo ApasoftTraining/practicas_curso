@@ -25,16 +25,25 @@
             mayus: function () {
                 return this.curso.toUpperCase();
             },
-            
+
             f2() { return "adios" },
 
-            ejemplo: ()=>{
+            ejemplo: () => {
                 return "Esto es una funcion de flecha";
             },
-            
+            yo: function(){ return this}
+
 
         }
-        
+
+        for (x in alumno) {
+            console.log(typeof (alumno[x]));
+        }
+        for (x in alumno) {
+            if (typeof (alumno[x]) != 'function')
+                console.log(x);
+        }
+
         let cursos = {
 
             id: 1,
