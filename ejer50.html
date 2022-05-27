@@ -18,7 +18,7 @@
         <input type="text" name="nombre">
         <input type="text" name="apellidos">
         <input type="number" name="edad">
-        <select  name="lista">
+        <select  name="lista" onchange="ver()">
             <option value="A">INFORMATICA</option>
             <option value="B">RRHH</option>
             <option value="C">VENTAS</option>
@@ -29,7 +29,7 @@
                 lista.options[2]=true
             -->
         </select>
-        <p>VALOR SELECCIONADO EN LA LISTA</p>
+        <p id="p1">VALOR SELECCIONADO EN LA LISTA</p>
 
 
 
@@ -48,6 +48,11 @@
         for (elemento of formulario2.elements)
         {
             elemento.style.backgroundColor='green';
+        }
+
+        function ver(){
+            let elemento=document.forms.f2.elements.lista;
+            document.getElementById('p1').innerHTML=elemento.value+" "+elemento.options[elemento.selectedIndex].innerHTML;
         }
 
         

@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href="./estilos/estilo.css">  
+
+
+}
 </head>
 <body>
     <h1> TRABAJAR CON FORMULARIOS</h1>
-    <form id="f1" name="f1" onsubmit="return ver()">
+    <form id="f1" name="f1" onsubmit=""ver(); return false >
         <input type="text" name="nombre">
         <input type="text" name="apellidos">
         <input type="number" name="edad">
@@ -28,16 +32,25 @@
                 lista.selectedindex
                 lista.options[2]=true
             -->
+            
         </select>
+        <p>Please select your favorite Web language:</p>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label >HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label >CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label >JavaScript</label>
         <p>VALOR SELECCIONADO EN LA LISTA</p>
-
-
-
-
         <input type="submit" name="submit" value="Aceptar">
     </form>
     <script>
-        func
+        /*
+        const element = document.getElementById('f1');
+    element.addEventListener('submit', event => { event.preventDefault(); // actual logic, e.g. validate the form
+       console.log('Form submission cancelled.');
+});*/
+       
         //(let formulario1=document.forms.f1;
         let formulario1=document.forms[0];
         for (elemento of formulario1.elements)
