@@ -20,5 +20,21 @@
         <input type="number" name="edad">
         <input type="submit" name="submit" value="Aceptar">
     </form>
+    <script>
+        //(let formulario1=document.forms.f1;
+        let formulario1=document.forms[0];
+        for (elemento of formulario1.elements)
+        {
+            elemento.style.backgroundColor='red';
+        }
+
+        let formulario2=document.forms.f2;
+        for (elemento of formulario2.elements)
+        {
+            elemento.style.backgroundColor='green';
+        }
+
+        
+    </script>
 </body>
 </html>
