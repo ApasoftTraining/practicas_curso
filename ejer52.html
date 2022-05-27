@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2>Eventos de formulario</h2>
-    <form   name="f1"  action="https://www.capgemini.com/es-es/"  method="get" onsubmit="alert('xxxx'); return false;" >
-          <input type="text" name="s">
-          <input type="submit" value="Buscar">
+    <form id="f1" name="f1" action="https://www.capgemini.com/es-es/" method="get">
+        <input id='caja' type="text" name="s">
+        <input type="submit" value="Buscar">
     </form>
+    <p id="error"></p>
     <script>
+         
+        //Evento de submit 
+        
+        document.addEventListener("DOMContentLoaded", function (event) {
+                        document.getElementById('f1').addEventListener('submit', v)
+        });
 
+
+        function v(e) {
+            //Desactivo el formulario
+            e.preventDefault();
+            //selecciono el foumarios
+            let formulario = document.getElementById('f1');
+            //selecciono el elemento
+            let elemento = document.getElementById('caja');
+
+            if (elemento.value.length > 10) {
+                document.getElementById('error').innerHTML = 'Busqueda demasiado grande';
+                return false
+            }
+            else
+                formulario.submit();
+            ;
+        }
 //onsubmit="alert(xxxx); return false"
     </script>
 </body>
+
 </html>
