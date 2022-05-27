@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> TRABAJAR CON FORMULARIOS</h1>
+    <form id="f1" name="f1" onsubmit="return ver()">
+        <input type="text" name="nombre">
+        <input type="text" name="apellidos">
+        <input type="number" name="edad">
+        <input type="submit" name="submit" value="Aceptar">
+    </form>
+    <form id="f2" name="f2">
+        <input type="text" name="nombre">
+        <input type="text" name="apellidos">
+        <input type="number" name="edad">
+        <select  name="lista">
+            <option value="A">INFORMATICA</option>
+            <option value="B">RRHH</option>
+            <option value="C">VENTAS</option>
+            <option value="D">MARKETING</option>
+            <!--   
+                lista.value
+                lista.selectedindex
+                lista.options[2]=true
+            -->
+        </select>
+        <p>VALOR SELECCIONADO EN LA LISTA</p>
+
+
+
+
+        <input type="submit" name="submit" value="Aceptar">
+    </form>
+    <script>
+        func
+        //(let formulario1=document.forms.f1;
+        let formulario1=document.forms[0];
+        for (elemento of formulario1.elements)
+        {
+            elemento.style.backgroundColor='red';
+        }
+
+        let formulario2=document.forms.f2;
+        for (elemento of formulario2.elements)
+        {
+            elemento.style.backgroundColor='green';
+        }
+
+        
+    </script>
+</body>
+</html>
