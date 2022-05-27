@@ -1,0 +1,5 @@
+
+input[type="radio"].sololectura {
+    opacity: 0.4;
+    pointer-events: none;
+    }
