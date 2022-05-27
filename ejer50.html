@@ -7,17 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form onsubmit="test()" action="">
-      <label for="username">Enter username:</label> 
-      <input type="text" name="username" id="username" />
-      <input type="submit" />
+    <h1> TRABAJAR CON FORMULARIOS</h1>
+    <form id="f1" name="f1">
+        <input type="text" name="nombre">
+        <input type="text" name="apellidos">
+        <input type="number" name="edad">
+        <input type="submit" name="submit" value="Aceptar">
     </form>
-    <script>
-      function test() {
-       
-
-        alert(`The function 'test' is executed ${document.forms[0].elements.username.value}`);
-      }
-    </script>
-  </body>
+</body>
 </html>
